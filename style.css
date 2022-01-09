@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400;1,500&display=swap');
+:root{
+    --primary-color:#14bcab;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    font-family: "Roboto";
+}
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: var(--primary-color);
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.utillity-ctn{
+    width: 100%;
+    height: 50px;
+    
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap:20px;
+}
+.heading{
+    font-size: 1.1rem;
+    color: #1e1e1e;
+    font-family: sans-serif;
+}
+.reset-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+
+    font-size: 1rem;;
+}
+.game-box{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    /* border: 2px solid black; */
+    gap:2px;
+    background-color: #7B7D7D;
+}
+.cell{
+    height:100px;
+    width: 100px;
+    
+    background-color: var(--primary-color);
+    
+}
+.X::after{
+    content: "X";
+    font-size: 50px;
+    font-weight: 900;
+    
+}
+.O::after{
+    content: "O";
+    font-size: 50px;
+    font-weight: 900;
+    
+}
